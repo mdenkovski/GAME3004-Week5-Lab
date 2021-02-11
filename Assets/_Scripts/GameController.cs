@@ -20,6 +20,10 @@ public class GameController : MonoBehaviour
 
     private void OnGUI()
     {
+        var scene = SceneManager.GetActiveScene();
+
+        if (scene.name != "Start") return;
+
         var width = Screen.width * 0.5f;
         var height = Screen.height * 0.5f;
 
